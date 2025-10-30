@@ -7,6 +7,7 @@ export const connectDB = async () => {
     }
     catch (error) {
         console.log(`While connecting with mongoose we can see error please check ${error}`)
+        process.exit(1)
     }
 
 }
